@@ -1,6 +1,6 @@
 import React from 'react';
 
-import('../assets/css/Content.css');
+import('../../assets/css/Content.css');
 
 const Content = props => {
     return (
