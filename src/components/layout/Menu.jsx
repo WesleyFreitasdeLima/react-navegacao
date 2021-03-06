@@ -14,6 +14,9 @@ const Menu = props => {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
+                        <Link to="/me/1">Me</Link>
+                    </li>
+                    <li>
                         <Link to="/about">About</Link>
                     </li>
                 </ul>

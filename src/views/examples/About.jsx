@@ -4,7 +4,7 @@ const About = props => {
     return (
         <div className="About">
             <h1>About</h1>
-            <p>O sistema foi criado usando React</p>
+            <p>This application was created using React</p>
         </div>
     );
 };

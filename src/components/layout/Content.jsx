@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 
 // Components
 import Home from '../../views/examples/Home';
+import Me from '../../views/examples/Me';
 import About from '../../views/examples/About';
 
 // Styles
@@ -15,6 +16,9 @@ const Content = props => {
             <Switch>
                 <Route path="/about">
                     <About />
+                </Route>
+                <Route path="/me/:id">
+                    <Me />
                 </Route>
                 <Route path="/">
                     <Home />
