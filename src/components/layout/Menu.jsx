@@ -1,6 +1,9 @@
+// Modules
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import('../../assets/css/Menu.css');
+// Syles
+import '../../assets/css/Menu.css';
 
 const Menu = props => {
     return (
@@ -8,10 +11,10 @@ const Menu = props => {
             <nav>
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <a href="/">About</a>
+                        <Link to="/about">About</Link>
                     </li>
                 </ul>
             </nav>

@@ -1,11 +1,25 @@
+// Modules
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-import('../../assets/css/Content.css');
+// Components
+import Home from '../../views/examples/Home';
+import About from '../../views/examples/About';
+
+// Styles
+import '../../assets/css/Content.css';
 
 const Content = props => {
     return (
         <main className="Content">
-            <h1>Content</h1>
+            <Switch>
+                <Route path="/about">
+                    <About />
+                </Route>
+                <Route path="/">
+                    <Home />
+                </Route>
+            </Switch>
         </main>
     );
 };

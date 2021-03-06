@@ -1,13 +1,21 @@
+// Modules
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
+// Components
 import Menu from '../components/layout/Menu';
 import Content from '../components/layout/Content';
-import('../assets/css/App.css');
+
+// Styles
+import '../assets/css/App.css';
 
 const App = props => {
     return (
         <div className="App">
-            <Menu />
-            <Content />
+            <BrowserRouter>
+                <Menu />
+                <Content />
+            </BrowserRouter>
         </div>
     );
 };
